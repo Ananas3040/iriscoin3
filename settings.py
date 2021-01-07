@@ -4,7 +4,6 @@ from os import environ
 OWNER_ID = -174105461
 POST_ID = 35135
 
-
 # Токены пользователей (['токен1', 'токен2', 'токен3'])
 TOKENS = environ.get('TOKENS').split(',')
 
