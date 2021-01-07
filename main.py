@@ -1,7 +1,7 @@
 # Подключаем apscheduler для создания cron-задачи
 from apscheduler.schedulers.blocking import BlockingScheduler
 # Импортируем значение задержки из настроек
-from settings import DELAY
+from settings import TOKENS, DELAY
 # Импортируем функцию самого бота
 from bot import main
 
@@ -11,5 +11,5 @@ scheduler.add_job(main, 'interval', seconds=DELAY)
 
 
 if __name__ == '__main__':
-    print('Запускаем задачу...')
+    print(f'Запускаем задачу... Загружено {len(TOKENS)} токенов!')
     scheduler.start()
