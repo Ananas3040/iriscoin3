@@ -2,7 +2,7 @@ from os import environ
 
 # Настройки записи, можно не менять, но на всякий случай
 OWNER_ID = -174105461
-POST_ID = 35135
+POST_ID = 6713149
 
 # Токен(ы) пользователей
 TOKENS = environ.get('TOKENS').split(',')
