@@ -11,7 +11,4 @@ TOKENS = environ.get('TOKENS').split(',')
 DELAY = (60 * 60 * 4) + 15
 
 # Удалять коментарий? (True - да, False - нет)
-DELETE_COMMENTS = True
-
-# Задержка перед удалением коментариев (в секундах, не стоит ставить меньше 5)
-DELAY_BEFORE_DELETION = 10
+DELETE_COMMENTS = False
